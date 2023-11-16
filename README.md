@@ -1,0 +1,33 @@
+## Pluging Manager - Vim-Plug
+
+// TODO
+Remember to use :PlugInstall and :PlugClean to update plugins
+
+## Telescope Plugin
+Installed with Vim-Plug
+
+<Space> ff -> Telescope
+
+## Settings and Remaps
+They are in $HOME/.config/nvim/lua/tangorf/*
+I'm using $HOME/.config/nvim/lua/tangorf/init.lua
+
+This file is loaded from the .config/nvim/init.vim and loads
+the settings.lua and remap.lua
+
+<Space> e  -> Goes to netrw (Explorer)
+
+## LSP Zero
+So...
+
+with :Mason
+Using :LspInstall on top of a Java file will recommend LSPs for that language.
+I'm currently using jdtls
+
+## Known Errors
+
+`treesitter/query.lua:273: Query error at 9:4. Invalid node type "heredoc_end".`
+
+:TSInstall bash fish
+
+

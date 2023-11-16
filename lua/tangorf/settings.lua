@@ -1,0 +1,21 @@
+vim.cmd("colorscheme tokyonight-night")
+-- vim.cmd("set number")
+vim.cmd("syntax on")
+
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+
+vim.opt.termguicolors = true
+
+vim.opt.scrolloff = 8
+
+vim.opt.nu = true
+
+-- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+
+-- vim.opt.colorcolumn = "80"
+
+-- vim.opt.relativenumber = true
+
+-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
