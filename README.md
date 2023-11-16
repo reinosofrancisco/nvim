@@ -16,7 +16,7 @@ Remember to use :PlugInstall and :PlugClean to update plugins
 ## Telescope Plugin
 Installed with Vim-Plug
 
-<Space> ff -> Telescope
+`<Space> ff` -> Telescope
 
 ## Settings and Remaps
 They are in $HOME/.config/nvim/lua/tangorf/*
@@ -25,7 +25,7 @@ I'm using $HOME/.config/nvim/lua/tangorf/init.lua
 This file is loaded from the .config/nvim/init.vim and loads
 the settings.lua and remap.lua
 
-<Space> e  -> Goes to netrw (Explorer)
+`<Space> e`  -> Goes to netrw (Explorer)
 
 ## LSP Zero
 So...
