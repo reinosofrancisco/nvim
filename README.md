@@ -1,3 +1,13 @@
+## Ubuntu Environment
+1. Install nvim.
+2. Copy this Configuration to $HOME/.config/nvim
+3. :PlugInstall
+
+## Windows 10 Enviroment
+1. Download nvim (modify $PATH environmental variable to include the path/to/nvim)
+2. Copy this Configuration to $HOME/AppData/Local/nvim
+3. :PlugInstall
+
 ## Pluging Manager - Vim-Plug
 
 // TODO
