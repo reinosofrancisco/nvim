@@ -1,6 +1,7 @@
 " For Ubuntu		- Default Folder $HOME/.config/nvim
 " For Windows 10 	- Default folder $HOME/AppData/Local/nvim
 
+" Vim-Plug Manager for Plugins
 call plug#begin('~/.local/share/nvim/site/plugged')
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -10,8 +11,15 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
 
 Plug 'mbbill/undotree'
 
+" Git Wrapper - So far I'm not really using it. Just :!git
+" Plug 'tpope/vim-fugitive'
+
+" THEME
+Plug 'folke/tokyonight.nvim'
+
 " --- [ START OF LSP CONFIGURATIONS ] ---
-"  Uncomment these if you want to manage LSP servers from neovim
+
+"  Manage LSP servers from neovim
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 
@@ -25,9 +33,7 @@ Plug 'L3MON4D3/LuaSnip'
 
 Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v3.x'}
 
-" THEME
-Plug 'folke/tokyonight.nvim'
-
+" --- [ END OF LSP CONFIGURATIONS ] ---
 call plug#end()
 
 lua require('tangorf/init')
