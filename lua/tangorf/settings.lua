@@ -2,6 +2,8 @@ vim.cmd("colorscheme tokyonight-night")
 -- vim.cmd("set number")
 vim.cmd("syntax on")
 
+vim.cmd("set autochdir")
+
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 
