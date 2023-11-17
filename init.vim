@@ -7,7 +7,7 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
+Plug 'nvim-telescope/telescope.nvim', { 'branch': 'release' }
 
 Plug 'mbbill/undotree'
 
@@ -16,6 +16,10 @@ Plug 'mbbill/undotree'
 
 " THEME
 Plug 'folke/tokyonight.nvim'
+
+Plug 'nvim-tree/nvim-web-devicons' " optional
+Plug 'nvim-tree/nvim-tree.lua'
+
 
 " --- [ START OF LSP CONFIGURATIONS ] ---
 
@@ -40,3 +44,4 @@ lua require('tangorf/init')
 lua require('after/plugins/telescope')
 lua require('after/plugins/treesitter')
 lua require('after/plugins/lsp')
+lua require('after/plugins/nvimtree')
