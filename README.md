@@ -17,6 +17,11 @@ Remember to use :PlugInstall and :PlugClean to update plugins
 Installed with Vim-Plug
 
 `<Space> ff` -> Telescope
+`<Space> gg` -> live_grep
+
+Remember to install the dependency
+WS - `choco install ripgrep`
+Ubuntu - tbd
 
 ## Settings and Remaps
 They are in $HOME/.config/nvim/lua/tangorf/*
