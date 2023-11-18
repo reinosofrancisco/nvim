@@ -20,8 +20,8 @@ Installed with Vim-Plug
 `<Space> gg` -> live_grep
 
 Remember to install the dependency
-WS - `choco install ripgrep`
-Ubuntu - tbd
+Windows - `choco install ripgrep`
+Ubuntu  - `sudo apt-get install ripgrep` 
 
 ## Settings and Remaps
 They are in $HOME/.config/nvim/lua/tangorf/*
