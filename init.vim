@@ -12,7 +12,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'branch': 'release' }
 Plug 'mbbill/undotree'
 
 " Git Wrapper - So far I'm not really using it. Just :!git
-" Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " THEME
 Plug 'folke/tokyonight.nvim'
