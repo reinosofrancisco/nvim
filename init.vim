@@ -17,8 +17,8 @@ Plug 'tpope/vim-fugitive'
 " THEME
 Plug 'folke/tokyonight.nvim'
 
-Plug 'nvim-tree/nvim-web-devicons' " optional
-Plug 'nvim-tree/nvim-tree.lua'
+"Plug 'nvim-tree/nvim-web-devicons' " optional
+"Plug 'nvim-tree/nvim-tree.lua'
 
 
 " --- [ START OF LSP CONFIGURATIONS ] ---
@@ -48,5 +48,5 @@ lua require('tangorf/init')
 lua require('after/plugins/telescope')
 lua require('after/plugins/treesitter')
 lua require('after/plugins/lsp')
-lua require('after/plugins/nvimtree')
+"lua require('after/plugins/nvimtree')
 
