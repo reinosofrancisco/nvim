@@ -13,6 +13,12 @@
 // TODO
 Remember to use :PlugInstall and :PlugClean to update plugins
 
+For Windows:
+```sh
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
+```
+
 ## Telescope Plugin
 Installed with Vim-Plug
 
@@ -41,8 +47,20 @@ I'm currently using jdtls
 
 ## Known Errors
 
+1.
 `treesitter/query.lua:273: Query error at 9:4. Invalid node type "heredoc_end".`
 
 :TSInstall bash fish
+
+2.
+
+Error detected while processing C:\Users\Francisco\AppData\Local\nvim\init.vim:
+line   45:
+No C compiler found! "cc", "gcc", "clang", "cl", "zig" are not executable.
+
+Fix:
+- choco install mingw
+- Run refreshenv to refresh to envoriment.
+- Start Neovim.
 
 
