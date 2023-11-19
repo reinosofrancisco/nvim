@@ -15,7 +15,8 @@ Plug 'mbbill/undotree'
 Plug 'tpope/vim-fugitive'
 
 " THEME
-Plug 'folke/tokyonight.nvim'
+"Plug 'folke/tokyonight.nvim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 "Plug 'nvim-tree/nvim-web-devicons' " optional
 "Plug 'nvim-tree/nvim-tree.lua'
