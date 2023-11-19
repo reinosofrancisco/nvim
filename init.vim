@@ -49,3 +49,4 @@ lua require('after/plugins/telescope')
 lua require('after/plugins/treesitter')
 lua require('after/plugins/lsp')
 lua require('after/plugins/nvimtree')
+
