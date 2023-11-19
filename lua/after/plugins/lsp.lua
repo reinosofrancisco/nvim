@@ -14,3 +14,15 @@ require('mason-lspconfig').setup({
     lsp_zero.default_setup,
   },
 })
+
+-- Use to configure the LSP Installed via LSP_ZERO
+require('lspconfig').lua_ls.setup({
+	settings = {
+		Lua = {
+			diagnostics = {
+				-- Get the language server to recognize the `vim` global
+				globals = { 'vim' }
+			}
+		}
+	}
+})

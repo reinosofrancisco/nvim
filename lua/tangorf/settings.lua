@@ -4,12 +4,9 @@ require('catppuccin').setup({
 	transparent_background = true,
 })
 
--- vim.cmd("colorscheme tokyonight-night")
 vim.cmd("colorscheme catppuccin")
--- vim.cmd("set number")
 vim.cmd("syntax on")
 vim.cmd("set noshowmode")
--- vim.cmd("set autochdir")
 
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
@@ -23,10 +20,12 @@ vim.opt.nu = true
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 -- vim.opt.colorcolumn = "80"
-
 -- vim.opt.relativenumber = true
 
+-- Uncomment to set transparency to none
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
-
+-- Uncomment to clean and install plugins every time I open nvim
+-- vim.cmd("PlugClean!")
+-- vim.cmd("PlugInstall")
