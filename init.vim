@@ -47,7 +47,8 @@ Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 " Status bar
 Plug 'vim-airline/vim-airline'
 
-Plug 'wsdjeg/vim-gosu'
+" Using my own fork so I can modify it
+Plug 'reinosofrancisco/vim-gosu'
 
 call plug#end()
 
