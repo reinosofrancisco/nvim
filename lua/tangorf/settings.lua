@@ -1,7 +1,7 @@
 -- Catppuccin Colorscheme and settings
 require('catppuccin').setup({
 	flavour = "mocha", -- latte, frappe, macchiato, mocha
-	-- transparent_background = true, --Disabled for now as it breaks some integrations
+	transparent_background = true, --Disabled for now as it breaks some integrations
 })
 
 vim.cmd("colorscheme catppuccin")

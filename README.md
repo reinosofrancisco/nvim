@@ -3,15 +3,26 @@
 2. Copy this Configuration to $HOME/.config/nvim
 3. :PlugInstall
 
+You should probably download Terminator
+`sudo apt install terminator`
+and set it as the default terminal
+`sudo update-alternatives --config x-terminal-emulator`
+
 ## Windows 10 Enviroment
 1. Download nvim (modify $PATH environmental variable to include the path/to/nvim)
 2. Copy this Configuration to $HOME/AppData/Local/nvim
 3. :PlugInstall
 
-## Pluging Manager - Vim-Plug
+Modify the settings.lua to turn on the background transparency 
 
-// TODO
+## Pluging Manager - Vim-Plug
 Remember to use :PlugInstall and :PlugClean to update plugins
+
+For Linux:
+```sh
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+```
 
 For Windows:
 ```sh
@@ -22,7 +33,8 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 ## Telescope Plugin
 Installed with Vim-Plug
 
-`<Space> ff` -> Telescope
+`<Space> ff` -> find_files
+`<Space> fg` -> git_files
 `<Space> gg` -> live_grep
 
 Remember to install the dependency
@@ -30,6 +42,9 @@ Windows - `choco install ripgrep`
 Ubuntu  - `sudo apt-get install ripgrep` 
 
 ## Fzf-native
+For Linux it just works.
+
+For Windows:
 This is ~20 times faster than the default fzy-lua pattern used
 make dependency for windows
 `choco install make`
@@ -52,7 +67,7 @@ So...
 
 with :Mason
 Using :LspInstall on top of a Java file will recommend LSPs for that language.
-I'm currently using jdtls
+I'm currently using jdtls and lua_ls.
 
 ## Codeium
 Free (so far) IA Autocompletion tool
