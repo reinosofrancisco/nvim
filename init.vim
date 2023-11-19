@@ -43,6 +43,8 @@ Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v3.x'}
 " Codeium for code assist
 Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 lua require('tangorf/init')

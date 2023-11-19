@@ -8,7 +8,7 @@ require('catppuccin').setup({
 vim.cmd("colorscheme catppuccin")
 -- vim.cmd("set number")
 vim.cmd("syntax on")
-
+vim.cmd("set noshowmode")
 -- vim.cmd("set autochdir")
 
 vim.opt.hlsearch = false
