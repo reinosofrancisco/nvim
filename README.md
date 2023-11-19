@@ -45,6 +45,10 @@ with :Mason
 Using :LspInstall on top of a Java file will recommend LSPs for that language.
 I'm currently using jdtls
 
+## Codeium
+Free (so far) IA Autocompletion tool
+:Codeium Auth
+
 ## Known Errors
 
 1.

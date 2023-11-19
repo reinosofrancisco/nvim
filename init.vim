@@ -38,6 +38,10 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'VonHeikemen/lsp-zero.nvim', {'branch': 'v3.x'}
 
 " --- [ END OF LSP CONFIGURATIONS ] ---
+
+" Codeium for code assist
+Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
+
 call plug#end()
 
 lua require('tangorf/init')
