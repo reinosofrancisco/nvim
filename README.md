@@ -29,6 +29,15 @@ Remember to install the dependency
 Windows - `choco install ripgrep`
 Ubuntu  - `sudo apt-get install ripgrep` 
 
+## Fzf-native
+This is ~20 times faster than the default fzy-lua pattern used
+make dependency for windows
+`choco install make`
+Then find the path to the plugins folder installed by Vim-Plug.
+On Windows it should be $HOME/.local/share/nvim/site/plugged/*
+go into /telescope-ffzf-native and run `make` 
+
+
 ## Settings and Remaps
 They are in $HOME/.config/nvim/lua/tangorf/*
 I'm using $HOME/.config/nvim/lua/tangorf/init.lua
