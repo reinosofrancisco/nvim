@@ -50,6 +50,9 @@ Plug 'vim-airline/vim-airline'
 " Using my own fork so I can modify it
 Plug 'reinosofrancisco/vim-gosu'
 
+" Tmux
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
 
 lua require('tangorf/init')
