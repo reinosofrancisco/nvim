@@ -1,3 +1,58 @@
+# OS Setup
+
+## Terminator
+
+```sh
+sudo add-apt-repository ppa:gnome-terminator/ppa -y # Terminator Team PPA
+sudo apt update
+sudo apt install terminator
+```
+
+Finally, set as default terminal emulator
+```sh
+sudo update-alternatives --config x-terminal-emulator
+```
+If this fails, try
+```sh
+gsettings set org.gnome.desktop.default-applications.terminal exec 'terminator'
+```
+
+## Oh My Zsh
+https://github.com/ohmyzsh/ohmyzsh
+
+Zsh Dependency
+```sh
+sudo apt install zsh
+chsh -s $(which zsh) # Set zsh as default, needs logout
+```
+
+Then
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## Tmux
+
+```sh
+sudo apt install tmux
+```
+
+Install the Tmux Plugin Manager
+https://github.com/tmux-plugins/tpm
+Plugins are installed to `~/.tmux/plugins/`
+
+```sh
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+Then, create a `~/.tmux.conf` file 
+
+
+
+
+---
+
+# Neovim Setup
+
 ## Ubuntu Environment
 1. Install nvim.
 2. Copy this Configuration to $HOME/.config/nvim
