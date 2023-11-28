@@ -21,7 +21,7 @@ vim.opt.nu = true
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 -- vim.opt.colorcolumn = "80"
--- vim.opt.relativenumber = true
+vim.opt.relativenumber = true
 
 -- Uncomment to set transparency to none
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })

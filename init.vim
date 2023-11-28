@@ -19,8 +19,8 @@ Plug 'tpope/vim-fugitive'
 "Plug 'folke/tokyonight.nvim'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 
-Plug 'nvim-tree/nvim-web-devicons' " optional
-Plug 'nvim-tree/nvim-tree.lua'
+"Plug 'nvim-tree/nvim-web-devicons' " optional
+"Plug 'nvim-tree/nvim-tree.lua'
 
 
 " --- [ START OF LSP CONFIGURATIONS ] ---
@@ -56,6 +56,10 @@ Plug 'christoomey/vim-tmux-navigator'
 " Harpoon
 Plug 'ThePrimeagen/harpoon'
 
+Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown' }
+
+Plug 'tpope/vim-commentary'
+
 call plug#end()
 
 lua require('tangorf/init')
@@ -63,5 +67,5 @@ lua require('after/plugins/telescope')
 lua require('after/plugins/treesitter')
 lua require('after/plugins/harpoon')
 lua require('after/plugins/lsp')
-lua require('after/plugins/nvimtree')
+"lua require('after/plugins/nvimtree')
 
