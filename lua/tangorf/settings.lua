@@ -18,6 +18,12 @@ vim.opt.scrolloff = 8
 
 vim.opt.nu = true
 
+-- Tabs
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+
+
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
 -- vim.opt.colorcolumn = "80"

@@ -1,4 +1,6 @@
+-- Configure LSP-ZERO
 local lsp_zero = require('lsp-zero')
+lsp_zero.extend_lspconfig()
 
 lsp_zero.on_attach(function(client, bufnr)
   -- see :help lsp-zero-keybindings
@@ -6,16 +8,16 @@ lsp_zero.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
   vim.keymap.set('n', 'gd', function() vim.lsp.buf.definition() end, opts)
   lsp_zero.default_keymaps({buffer = bufnr})
+
+  -- Java LSP has a different setup for DAP 
+  if client.name == "jdt.ls" then
+	  require("jdtls").setup_dap { hotcodereplace = "auto" }
+	  require("jdtls.dap").setup_dap_main_class_configs()
+  end
+
 end)
 
-require('mason').setup({})
-require('mason-lspconfig').setup({
-  handlers = {
-    lsp_zero.default_setup,
-  },
-})
-
--- Use to configure the LSP Installed via LSP_ZERO
+-- Set up the lua_ls language server specifics
 require('lspconfig').lua_ls.setup({
 	settings = {
 		Lua = {
@@ -25,4 +27,15 @@ require('lspconfig').lua_ls.setup({
 			}
 		}
 	}
+})
+
+-- Mason Setup
+require('mason').setup({})
+require('mason-lspconfig').setup({
+	-- Add this only on Specific Setups
+	ensure_installed = {'rust_analyzer','jdtls'},
+	handlers = {
+		lsp_zero.default_setup,
+		jdtls = lsp_zero.noop, -- Disable Jdtls
+	},
 })
