@@ -6,5 +6,17 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 -- empty setup using defaults
-require("nvim-tree").setup()
+require("nvim-tree").setup({
+	filters = {
+		dotfiles = false,
+	},
+	diagnostics = {
+		enable = true,
+	},
+	git = {
+  		enable = true,
+  		ignore = false,
+  		timeout = 500,
+	},
+})
 
