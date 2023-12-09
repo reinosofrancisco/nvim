@@ -6,7 +6,6 @@ lsp_zero.on_attach(function(client, bufnr)
   -- see :help lsp-zero-keybindings
   -- to learn the available actions  
   local opts = {buffer = bufnr, remap = false}
-  vim.keymap.set('n', 'gd', function() vim.lsp.buf.definition() end, opts)
   lsp_zero.default_keymaps({buffer = bufnr})
 
   -- Java LSP has a different setup for DAP 
