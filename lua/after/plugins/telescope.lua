@@ -5,18 +5,21 @@ vim.keymap.set('n', '<leader>gg', builtin.live_grep, {})
 
 local status_ok, telescope = pcall(require, "telescope")
 if not status_ok then
-  return
+	return
 end
 
 telescope.setup({
 	defaults = {
-		layout_strategy = 'vertical',
-		layout_config = {
-			-- width = 0.5,
-			prompt_position = 'top',
-			mirror = true,
-
-		},
+		-- layout_strategy = 'vertical',
+		-- layout_config = {
+		-- -- width = 0.5,
+		-- prompt_position = 'top',
+		-- mirror = true,
+		file_ignore_patterns = {
+			"target/",
+			"node_modules/",
+		}
+		-- }
 	},
 })
 

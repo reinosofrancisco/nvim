@@ -15,7 +15,7 @@ Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.5' }
 
 
 " THEME
-Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'rebelot/kanagawa.nvim'
 
 Plug 'nvim-tree/nvim-web-devicons' " optional
 Plug 'nvim-tree/nvim-tree.lua'
