@@ -13,7 +13,6 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.5' }
 
-
 " THEME
 Plug 'rebelot/kanagawa.nvim'
 
@@ -51,6 +50,9 @@ else
   Plug 'roxma/nvim-yarp'
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
+
+" Notifications
+Plug 'rcarriga/nvim-notify'
 
 " --- [ START OF LSP CONFIGURATIONS ] ---
 

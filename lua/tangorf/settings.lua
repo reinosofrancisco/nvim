@@ -56,7 +56,7 @@ vim.opt.shiftwidth = 4
 
 -- vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 
-vim.opt.colorcolumn = "90"
+-- vim.opt.colorcolumn = "90"
 vim.opt.relativenumber = true
 
 -- Uncomment to set transparency to none
