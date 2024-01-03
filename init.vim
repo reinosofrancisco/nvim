@@ -23,7 +23,7 @@ Plug 'nvim-tree/nvim-tree.lua'
 Plug 'Exafunction/codeium.vim', { 'branch': 'main' }
 
 " Status bar
-Plug 'vim-airline/vim-airline'
+Plug 'nvim-lualine/lualine.nvim'
 
 " Using my own fork so I can modify it
 Plug 'reinosofrancisco/vim-gosu'
@@ -92,4 +92,4 @@ lua require('after/plugins/nvimtree')
 lua require('after/plugins/dap')
 lua require('after/plugins/jdtls')
 lua require('after/plugins/wilder')
-
+lua require('after/plugins/lualine')
