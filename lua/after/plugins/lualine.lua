@@ -46,7 +46,7 @@ local config = {
 		lualine_a = {
 			{ 'mode', separator = { left = '' }, right_padding = 3 },
 		},
-		lualine_b = { 'filename', 'branch' },
+		lualine_b = { 'branch', 'filename' },
 		lualine_c = {},
 		lualine_x = {},
 		lualine_y = { 'filetype', 'progress' },
