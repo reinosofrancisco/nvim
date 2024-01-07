@@ -1,7 +1,7 @@
 # Neovim Setup
 
 ## Ubuntu Environment
-1. Install nvim.
+1. Install nvim. See [https://github.com/neovim/neovim/blob/master/BUILD.md]
 2. Copy this Configuration to $HOME/.config/nvim
 3. :PlugInstall
 
@@ -37,12 +37,19 @@ the settings.lua and remap.lua
 Use with :Mason 
 Note that using :LspInstall on top of a file will recommend LSPs for that language.
 
+For the Java Lsp, install java, jdtls and java-debug-adapter
+```
+sudo apt install openjdk-17-jdk
+```
 
 ## Codeium
 Free IA Autocompletion tool
 :Codeium Auth
 
-
+## Plugin Dependency
+```
+sudo apt install npm
+```
 
 ---
 
@@ -81,6 +88,14 @@ Then
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
+## Oh My Zsh Plugins
+
+```sh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
 ## Tmux
 
 ```sh
@@ -94,6 +109,7 @@ Plugins are installed to `~/.tmux/plugins/`
 ```sh
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
-Then, create a `~/.tmux.conf` file 
+Then, create a `~/.tmux.conf` file.
+Remember that you NEED to install the plugins by <Prefix-I>
 
 

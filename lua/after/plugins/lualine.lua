@@ -106,6 +106,7 @@ insert_to_lualine_c {
 }
 
 -- Search LSP and return the name of the client
+-- For some reason, the Jdtls server is not recognized here.
 insert_to_lualine_c {
 	function()
 		local msg = 'No Active Lsp'
