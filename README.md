@@ -110,14 +110,15 @@ Plugins are installed to `~/.tmux/plugins/`
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 Then, create a `~/.tmux.conf` file.
-Remember that you NEED to install the plugins by <Prefix-I>
+Remember that you NEED to install the plugins by `<Prefix-I>`
 
 
 ---
 
 ## Install NerfFonts on Windows 10,11
 
-Run this script where the downloaded .ttf files are:
+Run this script where the downloaded .ttf files are. 
+Extension should be `.vbs` and you should change the font manually after installing.
 
 ```vbscript
 Set ofso = CreateObject("Scripting.FileSystemObject")
@@ -129,7 +130,7 @@ Set objShell  = CreateObject("Shell.Application")
 Set oSource   = objShell.Namespace(SourceFolder)
 Set oWinFonts = objShell.Namespace(FONTS)
 
-' Lame VBscript needs 4 f*ing lines instead of "if (/\.ttf$/i) " ...
+' VBscript needs 4 lines instead of "if (/\.ttf$/i) " ...
 Set rxTTF = New RegExp
 rxTTF.IgnoreCase = True
 rxTTF.Pattern = "\.ttf$"

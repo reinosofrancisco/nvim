@@ -20,7 +20,7 @@ local bubbles_theme = {
 	normal = {
 		a = { fg = colors.black, bg = colors.violet },
 		b = { fg = colors.white, bg = colors.grey },
-		c = { fg = colors.black, bg = colors.darkblue },
+		c = { fg = colors.white , bg = colors.darkblue },
 	},
 
 	insert = { a = { fg = colors.black, bg = colors.blue } },
@@ -81,6 +81,18 @@ local function insert_to_inactive_lualine_c(component)
 	table.insert(config.inactive_sections.lualine_c, component)
 end
 
+-- Git Diffs
+insert_to_lualine_c {
+  'diff',
+  -- Is it me or the symbol for modified us really weird
+  symbols = { added = ' ', modified = '󰝤 ', removed = ' ' },
+  diff_color = {
+    added = { fg = colors.green },
+    modified = { fg = colors.orange },
+    removed = { fg = colors.red },
+  },
+}
+
 -- Temp variable because I need it on both sections
 local diagnostics = {
 	'diagnostics',
@@ -125,17 +137,6 @@ insert_to_lualine_c {
 	end,
 	--icon = ' LSP =',
 	color = { fg = colors.white, gui = 'bold' },
-}
-
-insert_to_lualine_c {
-  'diff',
-  -- Is it me or the symbol for modified us really weird
-  symbols = { added = ' ', modified = '󰝤 ', removed = ' ' },
-  diff_color = {
-    added = { fg = colors.green },
-    modified = { fg = colors.orange },
-    removed = { fg = colors.red },
-  },
 }
 
 -- Good old Encoding
